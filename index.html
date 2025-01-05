@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <meta name="description" content="Portfolio Amat Ramanyang - Full Stack Developer dan UI/UX Enthusiast. Jelajahi keterampilan, proyek, dan pengalaman saya dalam pengembangan web." />
+
+  
+  <meta name="keywords" content="Full Stack Developer, UI/UX Design, Web Development, React, Node.js, Portfolio, Amat Ramanyang" />
+
+  
+  <meta name="author" content="Amat Ramanyang" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+
+  </head>
+  <body>
+    <header class="hero">
+      <nav>
+        <ul>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <img src="./images/profile.jpg" alt="profile-picture" class="profile-pic" />
+        <h1>Amat Ramanyang</h1>
+        <h2>Full Stack Developer | UI/UX Enthusiast</h2>
+        <div class="social-link">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i> Github</a>
+            <a href="#" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
+          </div>
+      </div>
+    </header>
+    <section id="About" class="About">
+      <h2>About Me</h2>
+      <p>
+        I'm a Full Stack Developer with a passion for creating elegant solutions to complex problems. With over 5 years of experience in web development, I specialize in building responsive and user-friendly applications.
+
+My journey in technology began when I first discovered my love for coding during my university years. Since then, I've worked on numerous projects, constantly learning and adapting to new technologies.
+      </p>
+    </section>
+    <section id="Skills" class="Skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-js skill-icon javascript-icon"></i>
+            <h3 class="skill-title">JavaScript</h3>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-react skill-icon react-icon"></i>
+            <h3 class="skill-title">React</h3>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-node-js skill-icon node-icon"></i>
+            <h3 class="skill-title">Node.js</h3>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-python skill-icon python-icon"></i>
+            <h3 class="skill-title">Python</h3>
+          </div>
+
+          <div class="skill-card">
+            <i class="fas fa-database skill-icon sql-icon"></i>
+            <h3 class="skill-title">SQL</h3>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-git-alt skill-icon git-icon"></i>
+            <h3 class="skill-title">Git</h3>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-aws skill-icon aws-icon"></i>
+            <h3 class="skill-title">AWS</h3>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-docker skill-icon docker-icon"></i>
+            <h3 class="skill-title">Docker</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Projects" class="Projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="projects-grid">
+            <div class="project-card">
+                <img src="./images/project1.jpg" alt="E-commerce Platform" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-description">A full-featured online shopping platform built with React and Node.js</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./images/project3.jpg" alt="Task Management App" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Task Management App</h3>
+                    <p class="project-description">A collaborative task management tool with real-time updates</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./images/project2.jpg" alt="Portfolio Website" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">A responsive portfolio website built with React and TailwindCSS</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="Contact" class="Contact">
+        <h2>Contact</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Name" class="contact-input" required>
+            <input type="email" placeholder="Email" class="contact-input" required>
+            <textarea name="message" placeholder="Message" class="message-input" required></textarea>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+    <footer class="footer">
+        &copy; 2025 Amat Ramanyang. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

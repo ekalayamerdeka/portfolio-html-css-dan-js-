@@ -1,0 +1,399 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background-color: #1a1a2e;
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #1a1a2e;
+  padding: 15px 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li {
+  padding: 5px 0;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+/* Underline animation effect */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: whitesmoke;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #64b5f6;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 20px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    gap: 15px;
+  }
+}
+
+.hero-content img.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.hero-content {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.social-link a {
+  margin: 0 10px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+#About {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.About h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.About p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+/* Add some responsive design */
+@media (max-width: 768px) {
+  .About h2 {
+    font-size: 2em;
+  }
+
+  .About p {
+    font-size: 1em;
+  }
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.javascript-icon {
+  color: #f7df1e;
+}
+.react-icon {
+  color: #61dafb;
+}
+.node-icon {
+  color: #339933;
+}
+.python-icon {
+  color: #3776ab;
+}
+.sql-icon {
+  color: #4479a1;
+}
+.git-icon {
+  color: #f05032;
+}
+.aws-icon {
+  color: #232f3e;
+}
+.docker-icon {
+  color: #2496ed;
+}
+
+.skill-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.Projects {
+  padding: 40px 20px;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow-x: auto;
+  font-family: Arial, sans-serif;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex: 0 0 350px;
+  width: 350px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.project-description {
+  color: #444;
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin: 0;
+}
+.projects-grid {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  width: fit-content;
+  gap: 30px;
+}
+
+.project-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.project-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.project-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.project-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+.project-container {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 300px;
+    width: 300px;
+  }
+}
+
+.Contact {
+  padding: 60px 20px;
+  background-color: #f8f9fa; /* Light background to distinguish the section */
+}
+
+.Contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-input,
+.message-input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.contact-input:focus,
+.message-input:focus {
+  outline: none;
+  border-color: #1a1a2e;
+  box-shadow: 0 0 0 2px rgba(26, 26, 46, 0.1);
+}
+
+.message-input {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 15px 30px;
+  background-color: #1a1a2e; /* Matching your hero section color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.submit-button:hover {
+  background-color: #2a2a4e;
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* Placeholder styling */
+.contact-input::placeholder,
+.message-input::placeholder {
+  color: #999;
+}
+
+/* Error state */
+.contact-input:invalid,
+.message-input:invalid {
+  border-color: #2a2a4e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #1a1a2e; /* Matching your hero section color */
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Optional: Add hover effect to make copyright more visible */
+.footer:hover {
+  background-color: #2a2a4e;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
